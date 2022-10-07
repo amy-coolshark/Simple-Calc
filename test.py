@@ -22,15 +22,6 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(calc("1 - 1"), 0, "Should be 0")
         self.assertEqual(calc("1-1"), 0, "Should be 0")
 
-    def test_basic_div(self):
-        """Testing basic divison"""
-        self.assertEqual(calc("2/1"), 2, "Should be 2")
-        self.assertEqual(calc("2 / 1"), 2, "Should be 2")
-
-    def test_basic_cpd(self):
-        """Testing basic equation using all of pemdas"""
-        self.assertEqual(calc("1+1*2+3/3"), 4, "Should eval to 4")
-
 
 if __name__ == "__main__":
     unittest.main()
